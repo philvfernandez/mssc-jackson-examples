@@ -11,10 +11,6 @@ import java.io.IOException;
 @JsonTest
 public class BeerDtoTest extends BaseTest{
 
-    //Get ObjectMapper instance from spring context
-    @Autowired
-    ObjectMapper objectMapper;
-
     @Test
     void testSerializeDto() throws JsonProcessingException {
         BeerDto beerDto = getDto();
